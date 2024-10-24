@@ -1,0 +1,211 @@
+body {
+    background-image: url(img/email-bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 95vh;
+    max-height: 100vh;
+    max-width: 100vw;
+    background-attachment: fixed;
+    scroll-behavior: smooth;
+}
+
+.start-title {
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 1.5rem;
+}
+
+.inner-title {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.inner-title h1 {
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-size: 48px;
+    background: #d0ecff;
+    width: 40%;
+    border: 1px solid black;
+    border-radius: 2px;
+}
+
+.start-container {
+    position: absolute;
+    top: 25%;
+    margin-left: 7.5rem;
+    width: auto;
+    border-radius: 2px;
+}
+
+.companies {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 1rem;
+}
+
+.company-one, .company-two {
+    position: relative;
+    display: flex;
+    width: 245px;
+    height: 245px;
+    margin: 0 20px;
+    border-radius: 2px;
+}
+
+.company-one img, .company-two img {
+    border-radius: 2px;
+}
+
+.start-container .start-btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.start-btn a {
+    padding: .5rem .75rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #222;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    border: 1px solid black;
+    letter-spacing: 1px;
+    border-radius: 2px;
+}
+
+.start-btn a:hover {
+    background: #000000d9;
+    color: #fff;
+    transition: 0.2s ease-in-out;
+}
+
+.quiz-container {
+    font-family: "Roboto", sans-serif;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+.quiz-container h1 {
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.quiz-container h2.question {
+    display: flex;
+    font-size: 28px;
+    background: #d0ecff;
+    padding: 16px;
+    border-radius: 5px;
+    font-weight: normal;
+    line-height: 1.6;
+    margin-top: 5.5rem;
+}
+
+.quiz-container .options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.quiz-container .option {
+    border: none;
+    padding: 48px 32px;
+    font-size: 24px;
+    background: #000000e9;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.quiz-container button {
+    cursor: pointer;
+}
+
+.disabled {
+    pointer-events: none;
+}
+
+.option.correct {
+    background: #51e351;
+    color: #222;
+}
+
+.option.incorrect {
+    background: #e63946;
+}
+
+.quiz-container .next-btn, 
+.quiz-result .retake-btn {
+    background: #222;
+    color: #fff;
+    border: none;
+    padding: 12px 32px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 3px;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.quiz-container .next-btn:hover, 
+.quiz-result .retake-btn:hover {
+    background: #000000d9;
+    color: #fff;
+    transition: 0.2s ease-in-out;
+}
+
+.quiz-result {
+    display: none;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 900px;
+    margin: 0 auto;
+    font-family: "Roboto", sans-serif;
+    padding: 16px;
+}
+
+.quiz-result h2 {
+    color: #fff;
+    font-weight: 200;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+}
+
+.quiz-result .question-container {
+    padding: 20px;
+    border: 1px solid #eee;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.quiz-result .question-container.incorrect {
+    background: #e63946;
+    color: #fff;
+}
+
+.question-number {
+    font-size: 18px;
+    margin-right: 16px;
+    background: #222;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
